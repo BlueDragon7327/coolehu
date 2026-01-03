@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "she is soo beautiful",
     "i want her"
   ];
-  let bioText = '';
+  let bioText = 'yipie';
   let bioIndex = 0;
   let bioMessageIndex = 0;
   let isBioDeleting = false;
@@ -673,4 +673,5 @@ document.addEventListener('DOMContentLoaded', () => {
   typeWriterStart();
 
 });
+
 
