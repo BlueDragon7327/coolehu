@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   const startMessage = "click";
-  let startTextContent = '';
+  let startTextContent = 'click';
   let startIndex = 0;
   let startCursorVisible = true;
 
@@ -237,7 +237,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const bioMessages = [
     "omgg ts so peak",
     "xD",
-    "idk im bored"
+    "idk im bored",
+    "this one girl bro",
+    "she is soo beautiful",
+    "i want her"
   ];
   let bioText = '';
   let bioIndex = 0;
@@ -670,3 +673,4 @@ document.addEventListener('DOMContentLoaded', () => {
   typeWriterStart();
 
 });
+
