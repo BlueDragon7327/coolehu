@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const startText = document.getElementById('start-text');
   const profileName = document.getElementById('profile-name');
   const profileBio = document.getElementById('profile-bio');
-  const visitorCount = document.getElementById('visitor-count');
+  const visitorCount = null; // Removed visitor counter
   const backgroundMusic = document.getElementById('background-music');
   const hackerMusic = document.getElementById('hacker-music');
   const rainMusic = document.getElementById('rain-music');
@@ -116,27 +116,26 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 500);
 
 
-  function initializeVisitorCounter() {
-    let totalVisitors = localStorage.getItem('totalVisitorCount');
-    if (!totalVisitors) {
-      totalVisitors = 67;
-      localStorage.setItem('totalVisitorCount', totalVisitors);
-    } else {
-      totalVisitors = parseInt(totalVisitors);
-    }
+  //function initializeVisitorCounter() {
+   //if (!totalVisitors) {
+      //totalVisitors = 67;
+     // localStorage.setItem('totalVisitorCount', totalVisitors);
+    //} else {
+    //  totalVisitors = parseInt(totalVisitors);
+   // }
 
-    const hasVisited = localStorage.getItem('hasVisited');
-    if (!hasVisited) {
-      totalVisitors++;
-      localStorage.setItem('totalVisitorCount', totalVisitors);
-      localStorage.setItem('hasVisited', 'true');
-    }
+  //  const hasVisited = localStorage.getItem('hasVisited');
+   // if (!hasVisited) {
+   //   totalVisitors++;
+   //   localStorage.setItem('totalVisitorCount', totalVisitors);
+   //   localStorage.setItem('hasVisited', 'true');
+  //  }
 
-    visitorCount.textContent = totalVisitors.toLocaleString();
-  }
+  //  visitorCount.textContent = totalVisitors.toLocaleString();
+ // }
 
 
-  initializeVisitorCounter();
+ // initializeVisitorCounter();
 
 
   startScreen.addEventListener('click', () => {
